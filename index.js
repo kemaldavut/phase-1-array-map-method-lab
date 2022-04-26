@@ -12,5 +12,11 @@ const tutorials = [
 ];
 
 const titleCased = () => {
-  return tutorials
+  return tutorials.map( function (someStuff){
+  return someStuff
+  .split(' ')
+  .map((metin) => metin[0].toUpperCase() + metin.slice(1))
+  .join(' ');
+
+  })
 }
